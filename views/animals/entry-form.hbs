@@ -1,0 +1,49 @@
+<div class="container">
+    <h1>Animal Entry Form</h1>
+    <form id="animalForm">
+        <div class="mb-3">
+            <label for="zoo" class="form-label">Zoo:</label>
+            <input type="text" class="form-control" id="zoo" name="zoo" required>
+        </div>
+        <div class="mb-3">
+            <label for="scientificName" class="form-label">Scientific Name:</label>
+            <input type="text" class="form-control" id="scientificName" name="scientificName" required>
+        </div>
+        <div class="mb-3">
+            <label for="commonName" class="form-label">Common Name:</label>
+            <input type="text" class="form-control" id="commonName" name="commonName" required>
+        </div>
+        <div class="mb-3">
+            <label for="givenName" class="form-label">Given Name:</label>
+            <input type="text" class="form-control" id="givenName" name="givenName" required>
+        </div>
+        <div class="mb-3">
+            <label for="gender" class="form-label">Gender:</label>
+            <select class="form-select" id="gender" name="gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="dateOfBirth" class="form-label">Date of Birth:</label>
+            <input type="date" class="form-control" id="dateOfBirth" name="dateOfBirth" required>
+        </div>
+        <div class="mb-3">
+            <label for="age" class="form-label">Age:</label>
+            <input type="number" class="form-control" id="age" name="age" required>
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="isTransportable" name="isTransportable">
+            <label class="form-check-label" for="isTransportable">Transportable</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Add to Database</button>
+        <button type="button" class="btn btn-secondary" onclick="resetForm()">Reset</button>
+    </form>
+</div>
+
+<script>
+    // Function to reset the form
+    function resetForm() {
+        document.getElementById("animalForm").reset();
+    }
+</script>
